@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox1</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">MiLogo</div>
+        <ul class="menu">
+            <li>#Inicio</a></li>
+            <li>#Cursos</a></li>
+            <li>#Contacto</a></li>
+        </ul>
+        <button class="login">Login</button>
+    </nav>
+</body>
+
+</html>
+
+<style>
+    .navbar {
+        align-items: center;
+        display: flex;
+        border: 1px;
+        background-color: aqua;
+        justify-content: space-between;
+        gap: 2rem;
+
+    }
+
+    .menu {
+        display: flex;
+        flex: 1;
+        list-style: none;
+        gap: 1.5;
+
+    }
+</style>

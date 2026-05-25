@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Ejemplo <flex-basico></flex-basico></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Bloque A</div>
+        <div class="item">Bloque B</div>
+        <div class="item">Bloque C</div>
+        <div class="item">Bloque D</div>
+        <div class="item">Bloque E</div>
+       
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    .container {
+        display: flex;
+        border: 1px dotted red;
+        background-color: rgb(214, 211, 190);
+        max-width: 800px;
+        margin: 50px auto;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+       
+    }
+
+    .item {
+        width: 180px;
+        height: 180px;
+        border: 1px solid black;
+    }
+</style>

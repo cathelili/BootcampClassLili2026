@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones de formularios 2</title>
+</head>
+
+<body>
+    <form id="my-form2">
+        <br>
+        <label> ESCRIBE TU EMAIL</label>
+        <br>
+        <br>
+        <input id="email" type="text" info="email" placeholder="type your email">
+        <button type="submit">Send</button>
+        <br>
+        <label id="error" , style="color: crimson;font-size: smaller;">La informacion no es correcta</label>
+    </form>
+</body>
+
+</html>
+
+<script>
+
+    const formEl = document.getElementById("my-form2")
+    formEl.addEventListener("submit", (event) => {
+
+        event.preventDefault(); // esto es para parar la funcion para validar
+
+        const form = event.target;
+
+        const email = Form.elements.email.value
+        if (email.trim)
+            console.error("hay espacios en blanco");
+        if (email.length = 0)
+
+            console.error("hay espacios en blanco");
+
+        if (!email.includes(@ ))
+            consol.error("Debes incluir un @")
+
+        const error-email = document.getElementById("error")
+        error-e
+
+
+
+    });
+</script>

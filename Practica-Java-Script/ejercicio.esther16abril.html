@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-Esther-abril16</title>
+    <style>
+        .El-padre {
+            background-color: rgb(223, 161, 161);
+            border: 2px solid black;
+            display: flex;
+            width: 600px;
+            height: 400px;
+        }
+
+        .button {
+            background-color: grey;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            margin: 20px;
+        }
+
+        .activo {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="El-padre">
+        <button class="button" id="item-a">A</button>
+        <Button class="button" id="item-b">B</Button>
+        <button class="button" id="item-c">C</button>
+
+
+    </div>
+
+</body>
+
+</html>
+<script>
+
+const ElpadreEl = document.getElementsByClassName("El-padre");
+ElpadreEl.addEventListener("click" , (e)=> { 
+if (e.target.class.contain("padre")) {
+button.item-a.classList("button")
+button.item-b.classList("button")
+button.item-c.classList("button")
+}
+else if (e.target.class.contain("button")) {
+    e.target.classList("activo")
+    if (e.target.c)
+}
+
+})
+
+
+</script>

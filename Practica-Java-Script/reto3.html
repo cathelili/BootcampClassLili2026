@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla</title>
+</head>
+
+<body>
+    <h3> FORMULARIO</h3>
+    <table id="tabla-madre">
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+
+                <th>APELLIDO</th>
+            </tr>
+            <tr>
+                <td>Eidy</td>
+                <td>Manzo</td>
+            </tr>
+
+            <tr>
+                <td>Rozilene</td>
+                <td>Amorim</td>
+            </tr>
+            <tr>
+                <td>Rossana</td>
+                <td>Maguina</td>
+            </tr>
+
+
+
+
+
+
+            </th>
+        </thead>
+    </table>
+</body>
+
+</html>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px 20px;
+    }
+
+    th {
+        background-color: rgb(212, 176, 188);
+    }
+
+    td {
+        background-color: rgb(40, 213, 115);
+    }
+</style>
+
+<script>
+    const tdnew = document.getElementById("tabla-madre")
+
+    const tdnewEl2 = document.createElement("table")
+    tdnewEl2.textContent = "Amanda"
+    document.body.prepend(tdnew)
+
+
+
+    </script> 
+
+<!--Tarea:
+Crear un HTML con una tabla de dos columnas: nombre, apellido
+En la tabla hay 3 filas
+Con JavaScript hay que añadir una nueva fila
+
+OJO! Hay que:
+Crear un <tr>
+Crear dos <td> e insertarlos al <tr>
+Insertar el <tr> al final de la tabla -->

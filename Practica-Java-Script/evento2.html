@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    #cajapadre {
+        border: 1px solid red;
+        background-color: aquamarine;
+    }
+</style>
+</head>
+<body>
+<div id="cajapadre">
+    <p> Hola, soy la caja padre </p>
+</div>
+
+</body>
+</html>
+<script>
+const newDiv = document.createElement("div") 
+newDiv.textContent = "Hola!"
+// Obtener el elemento padre
+const cajapadreEl = document.getElementById('cajapadre');
+// Insertarlo en la página
+cajapadreEl.prepend(newDiv)
+newDiv.style.backgroundColor = "red"
+newDiv.style.border = "1px solid black"
+</script>
+<!--Crear un HTML con un div que tenga un borde, un texto y una id.
+Hay que generar dinámicamente nuevo div (con borde de otro color y 
+texto) y añadirlo dentro del primer div.-->

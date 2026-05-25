@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de formulario</title>
+</head>
+
+<body>
+    <form id="Validacion" method="post" autocomplete="off">
+        <label>INTRODUCE UN NUMERO ENTRE 10 O 20</label>
+        <br>
+        <br>
+
+        <input type="text" name="number" placeholder="write a number">
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>
+
+<script>
+    const formEl = document.getElementById("Validacion");
+    formEl.addEventListener("submit", (event) => {
+
+        event.preventDefault(); // esto es para parar la funcion para validar
+
+        const form = event.target;
+
+        const number = form.elements.number.value;
+
+        if (isNaN(number)) {
+            console.error("El valor introducido no es numérico");
+            return;
+        }
+        if (!(number > 10 && number < 20) ) {
+            console.error("El valor esta fuera del rango");
+            
+
+        }
+console.log("Todo lo que he hecho con las chicas esta ok")
+
+
+
+});
+
+</script>

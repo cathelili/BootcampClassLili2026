@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea uso Dom</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px 20px;
+        }
+
+        th {
+            background-color: rgb(9, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tabla">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>Evan</td>
+            <td>Jimenez</td>
+        </tr>
+        <tr>
+            <td>Joaquin</td>
+            <td>Santana</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>López</td>
+        </tr>
+    </table>
+    <br>
+    <form id="form-lili" method="post">
+        <input id="nombre" type="text" name="username" placeholder="User name">
+        <input id="lastname" type="text" apellido="lastname" placeholder="Last name">
+        <input type="submit" value="Send">
+    </form>
+
+</body>
+
+</html>
+
+<script>
+    const formEl = document.getElementById("form-lili")
+    console.log(formEl)
+    const nameEL = document.getElementById("nombre")
+    console.log(nameEL)
+
+    const apellidoEL = document.getElementById("lastname")
+    console.log(apellidoEL)
+
+    formEl.addEventListener("submit", (event) => {
+        event.preventDefault()
+
+        let formValues = event.target
+
+        const username = formValues.elements.username.value
+        console.log(username)
+        console.log(typeof formValues)
+
+        const lastname = formValues.elements.lastname.value
+        console.log(lastname)
+        console.log(typeof formValues)
+
+
+        const tablaEL = document.getElementById('tabla')
+        const newtd1 = document.createElement("td")
+        newtd1.innerHTML = formValues.elements.username.value
+        const newtd2 = document.createElement("td")
+        newtd2.innerHTML = formValues.elements.lastname.value
+        tablaEL.append(newtd1, newtd2)
+
+
+    });
+
+
+</script>
